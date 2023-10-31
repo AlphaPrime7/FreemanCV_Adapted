@@ -1,0 +1,386 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%!TEX program = xelatex
+% NOTE: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	10pt, % Default font size, can be between 8pt and 12pt
+]{FreemanCV_MOD}
+
+\columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
+
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+\rfoot{\textcolor{headings}{\sffamily Last update: \today.}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin two-column mode
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CURRICULUM VITAE TITLE
+%----------------------------------------------------------------------------------------
+
+\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+	\centering % Horizontally center text
+	
+	{\sffamily\Huge Tingwei Adeck, MS, MBA} % Your name
+	%{\sffamily\Huge Tingwei Adeck, MS, MBA} % Your name
+	
+	%\medskip % Vertical whitespace
+	
+	{\cursivefont\Huge\textcolor{headings}{My CV/Resume}}
+	
+	\vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+%\section{SUMMARY}
+
+%{\raggedright\textbf{"Data forever tells the truth even if we fail to extract these truths"-Anonymous}\par}
+
+%\medskip % Extra vertical whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}{\faAlignJustify}
+
+% Each job is added with a \jobentry command. Below is an empty one to use as a template:
+
+%\jobentry
+%	{} % Duration
+%	{} % FT/PT (full time or part time)
+%	{} % Employer
+%	{} % Job title
+%	{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them	
+	
+%------------------------------------------------
+
+\jobentry
+	{ OCT 2022 --  AUG 2023} % Duration
+	{FT} % FT/PT (full time or part time)
+	{Amazon Inc.} % Employer
+	{Amazon Area Manager-Ops} % Job title
+	\jobdetails
+	\begin{itemize}
+	\item Leader of approximately 40 associates by shift-planning, running fragmented
+plans as conditions change through shift, while ensuring safety.
+	 \end{itemize}% Description
+	  % Description
+	
+%------------------------------------------------
+
+\jobentry
+	{Fall 2020 -- Fall 2022} % Duration
+	{PT} % FT/PT (full time or part time)
+	{University of Missouri Kansas City} % Employer
+	{Research/Teaching Assistant} % Job title
+	\jobdetails
+	\begin{itemize}
+	\item Spring 2021: Investigated the role of Phospholipase‑C (PLC) on Doubletime(DBT), Period (PER) and BDBT(Bridal DBT) cellular behavior.
+	\item Fall 2021: Liposome Flux Assays in the context of Voltage gated channels.
+	\item Spring 2022: Investigated interactions of dRSMG and RPSL genes in conferring higher level antibiotic resistance to bacteria.
+	 \end{itemize}% Description
+
+%------------------------------------------------
+
+\jobentry
+	{Fall 2017 -- Fall 2018} % Duration
+	{PT} % FT/PT (full time or part time)
+	{West Texas A \& M University} % Employer
+	{Undergraduate Research/Teaching Assistant} % Job title
+	\jobdetails
+	\begin{itemize}
+	\item Research in understanding the role of Tph-1 as a mediator in the circadian regulation of gastrointestinal motility and serotonin biosynthesis in Daytime Restricted Fed (DRF) mice.
+	 \end{itemize}% Description
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{Projects}{\faClipboard}
+
+%\textit{References available on request} % Uncomment if you'd rather not include references and remove the section below
+
+%------------------------------------------------
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+%\medskip % Extra vertical whitespace before the next section
+
+\projectentry
+	{Spring 2022} % Duration
+	{PT} % FT/PT (full time or part time)
+	{University of Missouri Kansas City} % Employer
+	{Liposome Flux Assays } % Project Title
+	\projectdetails
+	\begin{itemize}
+	\item Performed lab experiments on liposome flux assays to understand the electrophysiological properties of the bacterial Sodium Voltage gated channel (NavAb).
+	\item Data was analyzed using excel and R culminating in a presentation to faculty and peers.
+	 \end{itemize}
+	 
+\projectentry
+	{Fall 2022} % Duration
+	{FT} % FT/PT (full time or part time)
+	{University of Missouri Kansas City} % Employer
+	{Parametric and non-parametric analysis of the relationship between family size and health expenses from insurance data} % Project title
+	\projectdetails
+	\begin{itemize}
+	\item Analyzed health insurance data. Details on \href{https://github.com/AlphaPrime7/Health_Insurance_Project_SAS}{Github}.
+	\item Uncovered insights on the link between family size and health expense.
+	\end{itemize}
+	 % Description
+
+%------------------------------------------------
+%\medskip % Extra vertical whitespace before the next section
+
+\projectentry
+	{Fall 2023} % Duration
+	{PT} % FT/PT (full time or part time)
+	{Self-Starter} % Employer
+	{Normfluodbf} % Project Title
+	\projectdetails
+	\begin{itemize}
+	\item Created the \href{https://www.cran-e.com/package/normfluodbf}{normfluodbf} R package, currently with > 1000 downloads.
+	\item Facilitates analysis of pharmaceutical research data by scientists.
+	\end{itemize}
+	 % Description
+
+%------------------------------------------------
+%\medskip % Extra vertical whitespace before the next section
+
+
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the second (right) column
+
+%----------------------------------------------------------------------------------------
+%	COLORED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\colorbox{shade}{ % Create colored box and specify background color
+		\begin{supertabular}{@{\hspace{3pt}} p{0.02\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & Hedge Lane Terrace, Shawnee, KS 66226 \\ % Address
+			\raisebox{-1pt}{\faPhone} & \href{tel:816-562-2583}{+1 (816) 562-2583} \\ % Phone number
+			\raisebox{-1pt}{\small\faInbox} & \href{mailto:awesome.tingwei@outlook.com}{meMail} \\ % Email address
+			\raisebox{-1pt}{\small\faGithub} & \href{https://github.com/AlphaPrime7}{meGithub} \\ % Github Profile
+			\raisebox{-1pt}{\small\faLink} & \href{https://www.cran-e.com/package/normfluodbf}{normfluodbf} \\ % Webpage using ggcircle web link
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/tingwei-adeck/}{meLinkedIn} \\ % LinkedIn profile
+			% See fontawesome.pdf in the Fonts folder for all icons you can use
+		\end{supertabular}
+	}
+	\vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}{\faGraduationCap}
+
+% Each qualification entry is added with a \qualificationentry command. Below is an empty one to use as a template:
+
+%\qualificationentry
+%	{} % Duration
+%	{} % Degree
+%	{} % Honors, achievements or distinctions (e.g. first class honors)
+%	{} % Department
+%	{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\qualificationentry
+		{2020 -- 2022} % Duration
+		{Master of Science} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors)
+		{Cell and Molecular Biology/Bio-informatics} % Department
+		{University of Missouri Kansas City} % Institution
+	
+	%------------------------------------------------
+	
+	\qualificationentry
+		{2015-2016} % Duration
+		{Master of Business Administration} % Degree
+		{Beta Gamma Sigma} % Honors, achievements or distinctions (e.g. first class honors)
+		{School of Business} % Department
+		{West Texas A \& M University} % Institution
+	
+	%------------------------------------------------
+	
+	\qualificationentry
+		{2016 -- 2018} % Duration
+		{Bachelor of Science} % Degree
+		{Magna Cum Laude} % Honors, achievements or distinctions (e.g. first class honors)
+		{Department of Science} % Department
+		{West Texas A \& M University} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Honors and Awards}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\tableentry{2018}{\textbf{Scholastic Endowment Scholarship}}{}
+	\tableentry{}{\textit{West Texas A \& M University}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2018}{\textbf{President's Undergraduate Research Program Award}}{}
+	\tableentry{}{\textit{West Texas A \& M University}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2016}{\textbf{Golden Key International Honor Society}}{}
+	\tableentry{}{\textbf{Founder Scholarship}}{spaceafter}
+	\tableentry{}{\textit{West Texas A \& M University}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Computer}{SPSS, R, SAS, Python, SQL, Excel, Word}{spaceafter}
+	\tableentry{Visualization}{Tableau, PowerBI, R Shiny}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Statistics}{T-tests, Anova Family of tests}{}
+	\tableentry{}{Chi-sq family of tests, Wilcoxon Tests}{}
+	\tableentry{}{Box-Cox Transformation, Data Normalization}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Language}{French(fluent), English, Spanish (Duo-fluent)}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Presentations}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Seminars}{Oral Presentations at 3 Rotations Seminars}{}
+	\tableentry{}{School of Biological Sciences (UMKC) 2021 -- 2022}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Poster}{Poster at the Student Research Conference}{}
+	\tableentry{}{West Texas A \& M University -- 2018}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\section{Programs}
+
+\subsection{normfluodbf R package}
+An R \href{https://www.cran-e.com/package/normfluodbf}{package} to convert FLUOstar Omega microplate reader dirty ".dbf" file(s) to normalized data frame(s) in a single step.
+
+\subsection{normfluodbf ShinyApp}
+A product of the normfluodbf package distributed as a GUI App.
+
+\end{paracol} % End two-column mode
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+%
